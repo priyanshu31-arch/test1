@@ -40,12 +40,13 @@ function AddTodo({ onNewItem }) {
           <input type="date" className="border-2 border-black px-3  bg-blue-200" value={dueDate} onChange={handleDateChange} />
         </div>
         <div  className="px-5">
-          <button
-            type="button"
-            className="bg-gradient-to-b from-emerald-400 to-lime-500 px-5 py-0.5"
-            onClick={handleAddButtonClicked}
-            
-          >
+        <button
+  type="button"
+  className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold  py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:bg-green-500 focus:ring-4 focus:ring-green-300"
+  onClick={handleAddButtonClicked}
+>
+  
+          
             Add
           </button>
         </div>
