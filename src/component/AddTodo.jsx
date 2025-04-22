@@ -1,6 +1,9 @@
-import { useState } from "react"
+import { useState } from "react";
+import {  toast } from 'react-toastify';
+
 function AddTodo({ onNewItem }) {
   
+
   const [todoName, setTodoName] = useState();
   const [dueDate, setDueDate] = useState();
 
@@ -16,6 +19,7 @@ function AddTodo({ onNewItem }) {
     onNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
+    toast.success("Nice! Keep it up...")
     
   };
 
